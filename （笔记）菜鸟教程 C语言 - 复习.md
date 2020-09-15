@@ -6,6 +6,8 @@
 
 C 语言最初是用于系统开发工作，特别是组成操作系统的程序。由于 C 语言所产生的代码运行速度与汇编语言编写的代码运行速度几乎一样，所以采用 C 语言作为系统开发语言。
 
+
+
 ## [1. C 程序结构](https://www.runoob.com/cprogramming/c-program-structure.html)
 
 C 程序主要**包括**以下部分：
@@ -29,6 +31,8 @@ int main()
    return 0;
 }
 ```
+
+
 
 ## [2. C 基本语法](https://www.runoob.com/cprogramming/c-basic-syntax.html)
 
@@ -59,6 +63,8 @@ printf               // 标识符
 * **关键字**
   * 详见：https://www.runoob.com/cprogramming/c-basic-syntax.html
 
+
+
 ## [3. C 数据类型](https://www.runoob.com/cprogramming/c-data-types.html)
 
 | 序号 | 类型与描述                                                   |
@@ -82,6 +88,8 @@ printf               // 标识符
 **字符串常量**
 
 用英文的双引号引起来 可以保存多个字符："abc"。
+
+
 
 ## [4. C 变量](https://www.runoob.com/cprogramming/c-variables.html)
 
@@ -111,6 +119,8 @@ char x = 'x';               // 变量 x 的值为 'x'
 extern int i; //声明，不是定义 //声明变量 i 为外部变量【√】
 int i; //声明，也是定义
 ```
+
+
 
 ## [5. C 常量](https://www.runoob.com/cprogramming/c-constants.html)
 
@@ -200,6 +210,8 @@ int i; //声明，也是定义
 
 * 请注意，把常量定义为**大写字母形式**
 
+
+
 ## [6. C 存储类](https://www.runoob.com/cprogramming/c-storage-classes.html)
 
 - `auto`
@@ -218,3 +230,139 @@ int i; //声明，也是定义
   - 用来**在另一个文件中**声明一个全局变量或函数
   - 通常用于当有两个或多个文件**共享**相同的全局变量或函数的时候
 
+
+
+## [7. C 判断](https://www.runoob.com/cprogramming/c-decision.html)
+
+C 语言提供了以下类型的判断语句。点击链接查看每个语句的细节。
+
+| 语句                                                         | 描述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [if 语句](https://www.runoob.com/cprogramming/c-if.html)     | 一个 **if 语句** 由一个布尔表达式后跟一个或多个语句组成。    |
+| [if...else 语句](https://www.runoob.com/cprogramming/c-if-else.html) | 一个 **if 语句** 后可跟一个可选的 **else 语句**，else 语句在布尔表达式为假时执行。 |
+| [嵌套 if 语句](https://www.runoob.com/cprogramming/c-nested-if.html) | 您可以在一个 **if** 或 **else if** 语句内使用另一个 **if** 或 **else if** 语句。 |
+| [switch 语句](https://www.runoob.com/cprogramming/c-switch.html) | 一个 **switch** 语句允许测试一个变量等于多个值时的情况。     |
+| [嵌套 switch 语句](https://www.runoob.com/cprogramming/c-nested-switch.html) | 您可以在一个 **switch** 语句内使用另一个 **switch** 语句。   |
+
+```c
+if(boolean_expression 1)
+{
+   /* 当布尔表达式 1 为真时执行 */
+}
+else if( boolean_expression 2)
+{
+   /* 当布尔表达式 2 为真时执行 */
+}
+else 
+{
+   /* 当上面条件都不为真时执行 */
+}
+
+switch(expression){
+    case constant-expression-1  :
+       statement(s);
+       break; /* 可选的 */
+    case constant-expression-2  :
+       statement(s);
+       break; /* 可选的 */  
+    /* 您可以有任意数量的 case 语句 */        
+    default : /* 可选的 */
+       statement(s);
+}
+```
+
+
+
+`? : ` **条件运算符**(三元运算符)，可以用来替代 `if...else` 语句
+
+```c
+Exp1 ? Exp2 : Exp3;
+```
+
+![img](https://raw.githubusercontent.com/bobo6668/markdown-pictures-bobo/master/img/data-structure/20200915224259.png)
+
+
+
+## [8. C 循环](https://www.runoob.com/cprogramming/c-loops.html)
+
+### 1）循环类型
+
+C 语言提供了以下几种循环类型。点击链接查看每个类型的细节。
+
+| 循环类型                                                     | 描述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [while 循环](https://www.runoob.com/cprogramming/c-while-loop.html) | 当给定条件为真时，重复语句或语句组。它会在执行循环主体之前测试条件。 |
+| [for 循环](https://www.runoob.com/cprogramming/c-for-loop.html) | 多次执行一个语句序列，简化管理循环变量的代码。               |
+| [do...while 循环](https://www.runoob.com/cprogramming/c-do-while-loop.html) | 除了它是在循环主体结尾测试条件外，其他与 while 语句类似。    |
+| [嵌套循环](https://www.runoob.com/cprogramming/c-nested-loops.html) | 您可以在 while、for 或 do..while 循环内使用一个或多个循环。  |
+
+```c
+while(condition)
+{
+   statement(s);
+}
+
+for ( init; condition; increment )
+{
+   statement(s);
+}
+
+do
+{
+   statement(s);
+
+}while( condition );
+```
+
+### 2）循环控制语句
+
+循环控制语句改变你代码的执行顺序。通过它你可以实现代码的跳转。
+
+C 提供了下列的循环控制语句。点击链接查看每个语句的细节。
+
+| 控制语句                                                     | 描述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [break 语句](https://www.runoob.com/cprogramming/c-break-statement.html) | 终止**循环**或 **switch** 语句，程序流将继续执行紧接着循环或 switch 的下一条语句。 |
+| [continue 语句](https://www.runoob.com/cprogramming/c-continue-statement.html) | 告诉一个循环体立刻停止本次循环迭代，重新开始下次循环迭代。   |
+| [goto 语句](https://www.runoob.com/cprogramming/c-goto-statement.html) | 将控制转移到被标记的语句。但是**不建议**在程序中使用 goto 语句。 |
+
+* `break`
+
+![img](https://raw.githubusercontent.com/bobo6668/markdown-pictures-bobo/master/img/data-structure/20200915224641.jpeg)
+
+* `continue`
+
+![img](https://raw.githubusercontent.com/bobo6668/markdown-pictures-bobo/master/img/data-structure/20200915224819.jpeg)
+
+* `goto`
+
+![img](https://raw.githubusercontent.com/bobo6668/markdown-pictures-bobo/master/img/data-structure/20200915224907.png)
+
+
+
+## [9. C 函数](https://www.runoob.com/cprogramming/c-functions.html)
+
+每个 C 程序都至少有一个函数，即主函数 **main()** 
+
+函数**声明**告诉编译器函数的名称、返回类型和参数。
+
+函数**定义**提供了函数的实际主体。
+
+C 标准库提供了大量的程序可以调用的**内置函数**。例如，函数 **strcat()** 用来连接两个字符串
+
+```c
+//【函数声明】
+return_type function_name( parameter list );
+
+//【函数定义】
+// 返回类型   // 函数名称    // 参数
+return_type function_name( parameter list )
+{
+   body of the function  // 函数
+}
+```
+
+| 调用类型                                                     | 描述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [传值调用](https://www.runoob.com/cprogramming/c-function-call-by-value.html) | 该方法把参数的实际值复制给函数的形式参数。在这种情况下，修改函数内的形式参数不会影响实际参数。 |
+| [引用调用](https://www.runoob.com/cprogramming/c-function-call-by-pointer.html) | 通过指针传递方式，形参为指向实参地址的指针，当对形参的指向操作时，就相当于对实参本身进行的操作。 |
