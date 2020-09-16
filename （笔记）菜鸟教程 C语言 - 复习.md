@@ -364,5 +364,89 @@ return_type function_name( parameter list )
 
 | 调用类型                                                     | 描述                                                         |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| [传值调用](https://www.runoob.com/cprogramming/c-function-call-by-value.html) | 该方法把参数的实际值复制给函数的形式参数。在这种情况下，修改函数内的形式参数不会影响实际参数。 |
-| [引用调用](https://www.runoob.com/cprogramming/c-function-call-by-pointer.html) | 通过指针传递方式，形参为指向实参地址的指针，当对形参的指向操作时，就相当于对实参本身进行的操作。 |
+| [传值调用](https://www.runoob.com/cprogramming/c-function-call-by-value.html) | 该方法把参数的实际值复制给函数的**形式参数**。在这种情况下，修改函数内的形式参数不会影响实际参数。 |
+| [引用调用](https://www.runoob.com/cprogramming/c-function-call-by-pointer.html) | 通过指针传递方式，形参为指向**实参地址**的指针，当对形参的指向操作时，就相当于对实参本身进行的操作。 |
+
+
+
+## [10. C 作用域规则](https://www.runoob.com/cprogramming/c-scope-rules.html)
+
+任何一种编程中，作用域是程序中定义的变量所存在的区域，超过该区域变量就不能被访问。C 语言中有三个地方可以声明变量：
+
+1. 在函数或块内部的**局部**变量
+
+   当局部变量被定义时，系统<u>不会对其初始化</u>，您必须自行对其初始化
+
+2. 在所有函数外部的**全局**变量
+
+   定义全局变量时，系统<u>会自动对其初始化</u>。
+
+   但是，<u>正确地初始化变量是一个良好的编程习惯</u>，否则有时候程序可能会产生意想不到的结果，因为未初始化的变量会导致一些在内存位置中已经可用的垃圾值
+
+3. 在**形式**参数的函数参数定义中
+
+> **全局变量与局部变量在内存中的区别**：
+>
+> - 全局变量保存在内存的全局存储区中，占用静态的存储单元；
+> - 局部变量保存在栈中，只有在所在函数被调用时才动态地为变量分配存储单元。
+>
+> 更多内容可参考：[C/C++ 中 static 的用法全局变量与局部变量](https://www.runoob.com/w3cnote/cpp-static-usage.html)
+
+
+
+## [11. C 数组](https://www.runoob.com/cprogramming/c-arrays.html)
+
+可以存储一个固定大小的相同类型元素的顺序集合
+
+![C 中的数组](https://www.runoob.com/wp-content/uploads/2014/08/arrays.jpg)
+
+### 1）声明
+
+一维数组
+
+```c
+type arrayName [ arraySize ];
+
+// 例
+double balance[10];
+```
+
+### 2）初始化数组
+
+在 C 中，您可以逐个初始化数组
+
+也可以使用一个初始化语句，如下所示：
+
+```c
+double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+```
+
+如果您省略掉了数组的大小，数组的大小则为初始化时元素的个数。因此，如果：
+
+```c
+double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+```
+
+您将创建一个数组，它与前一个实例中所创建的数组是完全相同的。
+
+![数组表示](https://www.runoob.com/wp-content/uploads/2014/08/array_presentation.jpg)
+
+### 3）访问数组元素
+
+数组元素可以通过数组名称加索引进行访问。如
+
+```c
+double salary = balance[9];
+```
+
+### 4）C 中数组详解
+
+在 C 中，数组是非常重要的，我们需要了解更多有关数组的细节。下面列出了 C 程序员必须清楚的一些与数组相关的重要概念：
+
+| 概念                                                         | 描述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [多维数组](https://www.runoob.com/cprogramming/c-multi-dimensional-arrays.html) | C 支持多维数组。多维数组最简单的形式是二维数组。             |
+| [传递数组给函数](https://www.runoob.com/cprogramming/c-passing-arrays-to-functions.html) | 您可以通过指定不带索引的数组名称来给函数传递一个指向数组的指针。 |
+| [从函数返回数组](https://www.runoob.com/cprogramming/c-return-arrays-from-function.html) | C 允许从函数返回数组。                                       |
+| [指向数组的指针](https://www.runoob.com/cprogramming/c-pointer-to-an-array.html) | 您可以通过指定不带索引的数组名称来生成一个指向数组中第一个元素的指针。 |
+
