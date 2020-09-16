@@ -398,7 +398,7 @@ return_type function_name( parameter list )
 
 可以存储一个固定大小的相同类型元素的顺序集合
 
-![C 中的数组](https://www.runoob.com/wp-content/uploads/2014/08/arrays.jpg)
+![C 中的数组](https://raw.githubusercontent.com/bobo6668/markdown-pictures-bobo/master/img/data-structure/20200916180451.jpeg)
 
 ### 1）声明
 
@@ -429,7 +429,7 @@ double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};
 
 您将创建一个数组，它与前一个实例中所创建的数组是完全相同的。
 
-![数组表示](https://www.runoob.com/wp-content/uploads/2014/08/array_presentation.jpg)
+![数组表示](https://raw.githubusercontent.com/bobo6668/markdown-pictures-bobo/master/img/data-structure/20200916180456.jpeg)
 
 ### 3）访问数组元素
 
@@ -449,4 +449,55 @@ double salary = balance[9];
 | [传递数组给函数](https://www.runoob.com/cprogramming/c-passing-arrays-to-functions.html) | 您可以通过指定不带索引的数组名称来给函数传递一个指向数组的指针。 |
 | [从函数返回数组](https://www.runoob.com/cprogramming/c-return-arrays-from-function.html) | C 允许从函数返回数组。                                       |
 | [指向数组的指针](https://www.runoob.com/cprogramming/c-pointer-to-an-array.html) | 您可以通过指定不带索引的数组名称来生成一个指向数组中第一个元素的指针。 |
+
+## [12. C enum(枚举)](https://www.runoob.com/cprogramming/c-enum.html)
+
+### 1）声明
+
+```c
+enum DAY
+{
+      MON=1, TUE, WED, THU, FRI, SAT, SUN
+};
+```
+
+**注意：**
+
+第一个枚举成员的默认值为整型的 0，后续枚举成员的值在前一个成员上加 1。
+
+我们在这个实例中把第一个枚举成员的值定义为 1，第二个就为 2，以此类推。
+
+### 2）定义
+
+1、先定义枚举类型，**再**定义枚举变量
+
+```c
+enum DAY
+{
+      MON=1, TUE, WED, THU, FRI, SAT, SUN
+};
+enum DAY day;
+```
+
+2、定义枚举类型的**同时**定义枚举变量
+
+```c
+enum DAY
+{
+      MON=1, TUE, WED, THU, FRI, SAT, SUN
+} day;
+```
+
+3、**省略**枚举名称，**直接定义**枚举变量
+
+```c
+enum
+{
+      MON=1, TUE, WED, THU, FRI, SAT, SUN
+} day;
+```
+
+在C 语言中，枚举类型是被当做 int 或者 unsigned int 类型来处理的，所以按照 C 语言规范是**没有办法遍历**枚举类型的。
+
+不过在一些特殊的情况下，枚举类型为**连续**时，可以实现有条件的遍历。不连续的则不行。
 
