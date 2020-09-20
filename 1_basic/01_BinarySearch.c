@@ -6,7 +6,7 @@
 typedef int ElementType;
 
 typedef int Position;
-typedef struct LNode *List;
+typedef struct LNode *List;  //定义成指针，便于修改内容 
 struct LNode
 {
     ElementType Data[MAXSIZE];
