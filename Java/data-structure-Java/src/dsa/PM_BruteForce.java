@@ -1,4 +1,4 @@
-/*
+package dsa;/*
  * 串模式匹配：蛮力算法
  * 若返回位置i > length(T) - length(P)，则说明失配
  * 否则，i为匹配位置
