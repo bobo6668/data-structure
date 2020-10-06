@@ -12,6 +12,9 @@ public class Node implements Position {
 	public Node()
 	{	this(null, null);	}//指向数据对象、后继节点的引用都置空
 
+	public Node(Object e) // bobo改
+	{	this(e, null);	}//指定数据对象，指向后继节点的引用置空
+
 	public Node(Object e, Node n)
 	{	element = e;	next = n;	}//指定数据对象及后继节点
 
