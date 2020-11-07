@@ -35,6 +35,48 @@
   * 思路：
     * [单调栈解决 Next Greater Number 一类问题](https://leetcode-cn.com/problems/next-greater-element-i/solution/dan-diao-zhan-jie-jue-next-greater-number-yi-lei-w/)
     * 用HashMap提高查找效率
+*  [682. 棒球比赛](https://leetcode-cn.com/problems/baseball-game/)    2020年11月6日
+  * 知识点：
+    * [java字符串和数字相互转换](https://blog.csdn.net/nuoyuezuo/article/details/85095869?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.add_param_isCf&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.add_param_isCf)
+    * [String字符串相等判断](https://blog.csdn.net/java_collect/article/details/102744656?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.add_param_isCf&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.add_param_isCf)
+  * 思路：用栈很容易实现，跟后缀表达式求值有点像
+* [1021. 删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses/)  2020年11月6日
+  * 知识点：
+    * [StringBuilder](https://www.runoob.com/java/java-stringbuffer.html)
+    * [for each](https://www.runoob.com/java/method-for.html)
+  * 思路：[Better 不用栈，用在线检测](https://leetcode-cn.com/problems/remove-outermost-parentheses/solution/jian-ji-de-java-shi-xian-by-huaouo/)
+* 
+
+
+
+### 1.2 队列
+
+* 
+
+
+
+### 1.3 树
+
+* [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)  2020年10月20日
+  * 思路：？
+* [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)  2020年10月21日
+  * 思路：？
+* [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)  2020年10月22日
+  * 思路：？
+* [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)  2020年10月23日
+  * 思路：？
+
+
+
+### 1.4 堆
+
+* [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)  2020年11月7日
+  * 思路：[Better 用大顶堆](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/)
 * 
 
  
+
+### 1.5 排序
+
+* [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/)  2020年10月30日
+  * 思路：写了个快排？
