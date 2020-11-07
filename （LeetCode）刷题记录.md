@@ -35,6 +35,7 @@
   * 思路：
     * [单调栈解决 Next Greater Number 一类问题](https://leetcode-cn.com/problems/next-greater-element-i/solution/dan-diao-zhan-jie-jue-next-greater-number-yi-lei-w/)
     * 用HashMap提高查找效率
+
 *  [682. 棒球比赛](https://leetcode-cn.com/problems/baseball-game/)    2020年11月6日
   * 知识点：
     * [java字符串和数字相互转换](https://blog.csdn.net/nuoyuezuo/article/details/85095869?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.add_param_isCf&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.add_param_isCf)
