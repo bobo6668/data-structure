@@ -16,13 +16,13 @@
 
 ### 1.1 栈
 
-* [[20]有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)  2020年11月3日
+* [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)  2020年11月3日
   * 思路：左括号进栈，右括号出栈，并用switch判断
-* [[155]最小栈]()  2020年11月3日
+* [155. 最小栈]()  2020年11月3日
   * 设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈
   * 思路：多开一个栈来存min
   * Better：省一点空间，只用1个栈 + 1点技巧：[解法2](https://leetcode-cn.com/problems/min-stack/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-38/)
-* [[225]用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)  2020年11月4日
+* [225. 用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)  2020年11月4日
   * 思路：
     * 队列：先进先出。队头出，队尾进
     * 栈：先进后出。只能从栈顶进、出
@@ -31,12 +31,11 @@
   * 思路：
     * 两个栈实现先入先出队列
     * [better](https://leetcode-cn.com/problems/implement-queue-using-stacks/solution/shi-yong-liang-ge-zhan-yi-ge-zhuan-men-ru-dui-yi-g/)：一个专门输入，一个专门输出；并用front记住队头变量，可以直接peek()
-*  [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)  2020年11月5日
+* [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)  2020年11月5日
   * 思路：
     * [单调栈解决 Next Greater Number 一类问题](https://leetcode-cn.com/problems/next-greater-element-i/solution/dan-diao-zhan-jie-jue-next-greater-number-yi-lei-w/)
     * 用HashMap提高查找效率
-
-*  [682. 棒球比赛](https://leetcode-cn.com/problems/baseball-game/)    2020年11月6日
+* [682. 棒球比赛](https://leetcode-cn.com/problems/baseball-game/)    2020年11月6日
   * 知识点：
     * [java字符串和数字相互转换](https://blog.csdn.net/nuoyuezuo/article/details/85095869?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.add_param_isCf&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.add_param_isCf)
     * [String字符串相等判断](https://blog.csdn.net/java_collect/article/details/102744656?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.add_param_isCf&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.add_param_isCf)
