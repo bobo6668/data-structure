@@ -6,9 +6,9 @@
 
 > 大家都是如何刷 LeetCode 的？ - 知乎 https://www.zhihu.com/question/280279208
 
-按从低到高的难度分组刷
-按 tag 分类刷
-定期复习，重做之前刷过的题
+* 按从低到高的难度分组刷
+* 按 tag 分类刷
+* 定期复习，重做之前刷过的题
 
 
 
@@ -35,6 +35,8 @@
 | [1441. 用栈操作构建数组](https://leetcode-cn.com/problems/build-an-array-with-stack-operations/) | 2020年11月7日 | 读懂题意即可                                                 | `List<String> list = new ArrayList<>();`                     |
 | [1544. 整理字符串](https://leetcode-cn.com/problems/make-the-string-great/) | 2020年11月8日 | 读懂题意即可                                                 | [大小写字母ASCII码之间的关系](https://baike.baidu.com/item/ASCII)：'a' - 'A' = 32, 'a' - 'z' = -25 |
 |                                                              |               |                                                              | `for (char c : s.toCharArray())`                             |
+| [1598. 文件夹操作日志搜集器](https://leetcode-cn.com/problems/crawler-log-folder/) | 2020年11月8日 | 法1：栈，空间复杂度O(n)                                      |                                                              |
+|                                                              |               | 法2：受到法1过程的启发，不需要用栈，空间复杂度O(1)           |                                                              |
 |                                                              |               |                                                              |                                                              |
 
 
