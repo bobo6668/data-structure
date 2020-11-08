@@ -45,6 +45,16 @@
     * [StringBuilder](https://www.runoob.com/java/java-stringbuffer.html)
     * [for each](https://www.runoob.com/java/method-for.html)
   * 思路：[Better 不用栈，用在线检测](https://leetcode-cn.com/problems/remove-outermost-parentheses/solution/jian-ji-de-java-shi-xian-by-huaouo/)
+* [1047. 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)  2020年11月7日
+  * 思路：使用StringBuilder来模拟栈
+* [1441. 用栈操作构建数组](https://leetcode-cn.com/problems/build-an-array-with-stack-operations/)  2020年11月7日
+  * 知识点：`List<String> list = new ArrayList<>();`
+  * 思路：读懂题意即可
+* [1544. 整理字符串](https://leetcode-cn.com/problems/make-the-string-great/)  2020年11月8日
+  * 知识点：
+    * [大小写字母ASCII码之间的关系](https://baike.baidu.com/item/ASCII)：'a' - 'A' = 32, 'a' - 'z' = -25
+    * `for (char c : s.toCharArray())`
+  * 思路：读懂题意即可
 * 
 
 
