@@ -60,9 +60,11 @@
 
 ### 1.4 堆
 
-| 题目                                                         | 时间          | 思路                                                         | 知识点 |
-| ------------------------------------------------------------ | ------------- | ------------------------------------------------------------ | :----- |
-| [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) | 2020年11月7日 | [Better 用大顶堆](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/) |        |
+| 题目                                                         | 时间          | 思路                                                         | 知识点                                                       |
+| ------------------------------------------------------------ | ------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
+| [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) | 2020年11月7日 | [Better 用大根堆](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/) | `PriorityQueue` 默认是小根堆，实现大根堆需要重写一下比较器   |
+|                                                              |               |                                                              | `Queue<Integer> pq = new PriorityQueue<>((v1, v2) -> v2 - v1);` |
+|                                                              |               |                                                              |                                                              |
 
  
 
