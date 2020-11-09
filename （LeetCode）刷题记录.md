@@ -43,9 +43,11 @@
 
 ### 1.2 队列
 
-| 题目 | 时间 | 思路 | 知识点 |
-| ---- | ---- | ---- | :----- |
-|      |      |      |        |
+| 题目                                                         | 时间          | 思路                                                         | 知识点                                       |
+| ------------------------------------------------------------ | ------------- | ------------------------------------------------------------ | :------------------------------------------- |
+| [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/) | 2020年11月9日 | 超过范围的出队即可                                           | `Queue<Integer> queue = new LinkedList<>();` |
+| [剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) | 2020年11月9日 | [单调队列](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/solution/mian-shi-ti-59-i-hua-dong-chuang-kou-de-zui-da-1-6/) | 单调队列是一个双端队列                       |
+|                                                              |               |                                                              |                                              |
 
 
 
