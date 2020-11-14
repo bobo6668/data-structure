@@ -53,12 +53,15 @@
 
 ### 1.3 树
 
-| 题目                                                         | 时间           | 思路 | 知识点 |
-| ------------------------------------------------------------ | -------------- | ---- | :----- |
-| [704. 二分查找](https://leetcode-cn.com/problems/binary-search/) | 2020年10月20日 | ？   |        |
-| [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | 2020年10月21日 | ？   |        |
-| [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) | 2020年10月22日 | ？   |        |
-| [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) | 2020年10月23日 | ？   |        |
+| 题目                                                         | 时间           | 思路                                                         | 知识点                                              |
+| ------------------------------------------------------------ | -------------- | ------------------------------------------------------------ | :-------------------------------------------------- |
+| [704. 二分查找](https://leetcode-cn.com/problems/binary-search/) | 2020年10月20日 | ？                                                           |                                                     |
+| [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | 2020年10月21日 | ？                                                           |                                                     |
+| [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) | 2020年10月22日 | ？                                                           |                                                     |
+| [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) | 2020年10月23日 | ？                                                           |                                                     |
+| [100. 相同的树](https://leetcode-cn.com/problems/same-tree/) | 2020年11月14日 | 递归                                                         |                                                     |
+| [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) | 2020年11月14日 | [递归](https://leetcode-cn.com/problems/symmetric-tree/solution/dong-hua-yan-shi-101-dui-cheng-er-cha-shu-by-user7/) | 找到对称的规律：① 左的左 = 右的右 ② 左的右 = 右的左 |
+|                                                              |                |                                                              |                                                     |
 
 
 
