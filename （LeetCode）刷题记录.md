@@ -64,6 +64,8 @@
 | [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | 2020年11月15日 | 递归                                                         | 树的深度 = max {左子树深度, 右子树深度} + 1                  |
 | [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | 2020年11月15日 | [广度优先](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/solution/die-dai-di-gui-duo-tu-yan-shi-102er-cha-shu-de-cen/)需要用队列作为辅助结构。先将根节点放到队列中，然后不断遍历队列 | [广度优先搜索算法（Breadth-First-Search）](https://www.jianshu.com/p/b086986969e6) |
 | [107. 二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | 2020年11月16日 | 在上一题的基础上简单修改即可。主要是逆序输出。               | `res.add(0,tmp); //为了逆序输出，采用链表，并添加到头部`     |
+| [108. 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/) | 2020年11月16日 | 讲解：[构造二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/solution/tu-jie-er-cha-sou-suo-shu-gou-zao-di-gui-python-go/)。[代码](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/solution/jian-dan-di-gui-bi-xu-miao-dong-by-sweetiee/) | 二查搜索树、树的构造、中序遍历                               |
+|                                                              |                |                                                              |                                                              |
 
 
 
