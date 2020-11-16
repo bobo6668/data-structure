@@ -63,7 +63,7 @@
 | [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) | 2020年11月14日 | [递归](https://leetcode-cn.com/problems/symmetric-tree/solution/dong-hua-yan-shi-101-dui-cheng-er-cha-shu-by-user7/) | 找到对称的规律：① 左的左 = 右的右 ② 左的右 = 右的左          |
 | [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | 2020年11月15日 | 递归                                                         | 树的深度 = max {左子树深度, 右子树深度} + 1                  |
 | [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | 2020年11月15日 | [广度优先](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/solution/die-dai-di-gui-duo-tu-yan-shi-102er-cha-shu-de-cen/)需要用队列作为辅助结构。先将根节点放到队列中，然后不断遍历队列 | [广度优先搜索算法（Breadth-First-Search）](https://www.jianshu.com/p/b086986969e6) |
-|                                                              |                |                                                              |                                                              |
+| [107. 二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | 2020年11月16日 | 在上一题的基础上简单修改即可。主要是逆序输出。               | `res.add(0,tmp); //为了逆序输出，采用链表，并添加到头部`     |
 
 
 
