@@ -16,7 +16,7 @@
 
 ### 1.1 栈
 
-| 题目                                                         | 时间          | 思路                                                         | 知识点                                                       |
+| 题目                                                         | 时间+代码     | 思路                                                         | 知识点                                                       |
 | ------------------------------------------------------------ | ------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
 | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | 2020年11月3日 | 左括号进栈，右括号出栈，并用switch判断                       |                                                              |
 | [155. 最小栈]()                                              | 2020年11月3日 | 设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈 |                                                              |
@@ -43,7 +43,7 @@
 
 ### 1.2 队列
 
-| 题目                                                         | 时间          | 思路                                                         | 知识点                                       |
+| 题目                                                         | 时间+代码     | 思路                                                         | 知识点                                       |
 | ------------------------------------------------------------ | ------------- | ------------------------------------------------------------ | :------------------------------------------- |
 | [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/) | 2020年11月9日 | 超过范围的出队即可                                           | `Queue<Integer> queue = new LinkedList<>();` |
 | [剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) | 2020年11月9日 | [单调队列](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/solution/mian-shi-ti-59-i-hua-dong-chuang-kou-de-zui-da-1-6/) | 单调队列是一个双端队列                       |
@@ -53,25 +53,27 @@
 
 ### 1.3 树
 
-| 题目                                                         | 时间           | 思路                                                         | 知识点                                                       |
-| ------------------------------------------------------------ | -------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
-| [704. 二分查找](https://leetcode-cn.com/problems/binary-search/) | 2020年10月20日 | ？                                                           |                                                              |
-| [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | 2020年10月21日 | ？                                                           |                                                              |
-| [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) | 2020年10月22日 | ？                                                           |                                                              |
-| [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) | 2020年10月23日 | ？                                                           |                                                              |
-| [100. 相同的树](https://leetcode-cn.com/problems/same-tree/) | 2020年11月14日 | 递归                                                         |                                                              |
-| [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) | 2020年11月14日 | [递归](https://leetcode-cn.com/problems/symmetric-tree/solution/dong-hua-yan-shi-101-dui-cheng-er-cha-shu-by-user7/) | 找到对称的规律：① 左的左 = 右的右 ② 左的右 = 右的左          |
-| [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | 2020年11月15日 | 递归                                                         | 树的深度 = max {左子树深度, 右子树深度} + 1                  |
-| [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | 2020年11月15日 | [广度优先](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/solution/die-dai-di-gui-duo-tu-yan-shi-102er-cha-shu-de-cen/)需要用队列作为辅助结构。先将根节点放到队列中，然后不断遍历队列 | [广度优先搜索算法（Breadth-First-Search）](https://www.jianshu.com/p/b086986969e6) |
-| [107. 二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | 2020年11月16日 | 在上一题的基础上简单修改即可。主要是逆序输出。               | `res.add(0,tmp); //为了逆序输出，采用链表，并添加到头部`     |
-| [108. 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/) | 2020年11月16日 | 讲解：[构造二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/solution/tu-jie-er-cha-sou-suo-shu-gou-zao-di-gui-python-go/)。[代码](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/solution/jian-dan-di-gui-bi-xu-miao-dong-by-sweetiee/) | 二查搜索树、树的构造、中序遍历                               |
-|                                                              |                |                                                              |                                                              |
+| 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------------------- |
+| [704. 二分查找](https://leetcode-cn.com/problems/binary-search/) | 2020年10月20日                                               | ？                                                           |                                                              |
+| [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | 2020年10月21日                                               | ？                                                           |                                                              |
+|                                                              |                                                              |                                                              |                                                              |
+| [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) | 2020年10月23日                                               | ？                                                           |                                                              |
+| [100. 相同的树](https://leetcode-cn.com/problems/same-tree/) | 2020年11月14日                                               | 递归                                                         |                                                              |
+| [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) | 2020年11月14日                                               | [递归](https://leetcode-cn.com/problems/symmetric-tree/solution/dong-hua-yan-shi-101-dui-cheng-er-cha-shu-by-user7/) | 找到对称的规律：① 左的左 = 右的右 ② 左的右 = 右的左          |
+| [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | 2020年11月15日                                               | 递归                                                         | 树的深度 = max {左子树深度, 右子树深度} + 1                  |
+| [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | 2020年11月15日                                               | [广度优先](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/solution/die-dai-di-gui-duo-tu-yan-shi-102er-cha-shu-de-cen/)需要用队列作为辅助结构。先将根节点放到队列中，然后不断遍历队列 | [广度优先搜索算法（Breadth-First-Search）](https://www.jianshu.com/p/b086986969e6) |
+| [107. 二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | 2020年11月16日                                               | 在上一题的基础上简单修改即可。主要是逆序输出。               | `res.add(0,tmp); //为了逆序输出，采用链表，并添加到头部`     |
+| [108. 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/) | 2020年11月16日                                               | 讲解：[构造二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/solution/tu-jie-er-cha-sou-suo-shu-gou-zao-di-gui-python-go/)。[代码](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/solution/jian-dan-di-gui-bi-xu-miao-dong-by-sweetiee/) | 二查搜索树、树的构造、中序遍历                               |
+| [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) | 2020年10月22日，[2020年11月19日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B110%5D%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.java) | 需要遍历所有节点：根、左、右                                 | 先序遍历（递归）、树的高度（递归）                           |
+| [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | [2020年11月19日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B111%5D%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6.java) | [理解递归结束条件](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/solution/li-jie-zhe-dao-ti-de-jie-shu-tiao-jian-by-user7208/) |                                                              |
+|                                                              |                                                              |                                                              |                                                              |
 
 
 
 ### 1.4 堆
 
-| 题目                                                         | 时间          | 思路                                                         | 知识点                                                       |
+| 题目                                                         | 时间+代码     | 思路                                                         | 知识点                                                       |
 | ------------------------------------------------------------ | ------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
 | [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) | 2020年11月7日 | [Better 用大根堆](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/) | `PriorityQueue` 默认是小根堆，实现大根堆需要重写一下比较器   |
 |                                                              |               |                                                              | `Queue<Integer> pq = new PriorityQueue<>((v1, v2) -> v2 - v1);` |
@@ -81,7 +83,7 @@
 
 ### 1.5 排序
 
-| 题目                                                         | 时间           | 思路         | 知识点 |
+| 题目                                                         | 时间+代码      | 思路         | 知识点 |
 | ------------------------------------------------------------ | -------------- | ------------ | :----- |
 | [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/) | 2020年10月30日 | 写了个快排？ |        |
 
