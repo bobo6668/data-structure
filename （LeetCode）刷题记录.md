@@ -123,6 +123,8 @@
 |                                                              | [2020年12月1日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B%E5%89%91%E6%8C%87%20Offer%2040%5D%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0.java) | 大根堆                                                       | `int[] array = new int[0];  // 定义一个长度为 0 的数组 / 空数组` |
 |                                                              |                                                              | 内置排序算法                                                 | `Arrays.sort(arr);`                                          |
 |                                                              |                                                              | 快排？                                                       |                                                              |
+| [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/) | [2020年12月3日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B703%5D%E6%95%B0%E6%8D%AE%E6%B5%81%E4%B8%AD%E7%9A%84%E7%AC%AC%20K%20%E5%A4%A7%E5%85%83%E7%B4%A0.java) | 小根堆                                                       |                                                              |
+| [1046. 最后一块石头的重量](https://leetcode-cn.com/problems/last-stone-weight/) | [2020年12月3日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B1046%5D%E6%9C%80%E5%90%8E%E4%B8%80%E5%9D%97%E7%9F%B3%E5%A4%B4%E7%9A%84%E9%87%8D%E9%87%8F.java) | 大根堆                                                       |                                                              |
 |                                                              |                                                              |                                                              |                                                              |
 
  
@@ -132,4 +134,5 @@
 | 题目                                                         | 时间+代码      | 思路         | 知识点 |
 | ------------------------------------------------------------ | -------------- | ------------ | :----- |
 | [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/) | 2020年10月30日 | 写了个快排？ |        |
+|                                                              |                |              |        |
 
