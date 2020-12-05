@@ -131,8 +131,27 @@
 
 ### 1.5 排序
 
-| 题目                                                         | 时间+代码      | 思路         | 知识点 |
-| ------------------------------------------------------------ | -------------- | ------------ | :----- |
-| [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/) | 2020年10月30日 | 写了个快排？ |        |
-|                                                              |                |              |        |
+| 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----- |
+| [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/) | 2020年10月30日                                               | 写了个快排？                                                 |        |
+| [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [2020年12月5日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B242%5D%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%202%20sort.java) | [转化为`char[]`，调用`Arrays`的方法`sort`和`equals`](https://leetcode-cn.com/problems/valid-anagram/solution/you-xiao-de-zi-mu-yi-wei-ci-by-leetcode-solution/) |        |
+|                                                              |                                                              |                                                              |        |
+|                                                              |                                                              |                                                              |        |
 
+
+
+### 1.6 查找
+
+| 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----- |
+| [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [2020年12月5日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B242%5D%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%201%20hash.java) | [哈希映射](https://leetcode-cn.com/problems/valid-anagram/solution/hua-jie-suan-fa-242-you-xiao-de-zi-mu-yi-wei-ci-by/) |        |
+|                                                              |                                                              |                                                              |        |
+
+
+
+### 1.7 集合
+
+| 题目                                                         | 时间+代码                                                    | 思路          | 知识点 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- | :----- |
+| [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [2020年12月5日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B349%5D%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.java) | 两个`HashSet` |        |
+|                                                              |                                                              |               |        |
