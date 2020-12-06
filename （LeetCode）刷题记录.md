@@ -4,7 +4,7 @@
 
 ## 0. 方法
 
-> 大家都是如何刷 LeetCode 的？ - 知乎 https://www.zhihu.com/question/280279208
+> [大家都是如何刷 LeetCode 的？ - 知乎](https://www.zhihu.com/question/280279208)
 
 * 按从低到高的难度分组刷
 * 按 tag 分类刷
@@ -131,12 +131,14 @@
 
 ### 1.5 排序
 
-| 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----- |
-| [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/) | 2020年10月30日                                               | 写了个快排？                                                 |        |
-| [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [2020年12月5日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B242%5D%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%202%20sort.java) | [转化为`char[]`，调用`Arrays`的方法`sort`和`equals`](https://leetcode-cn.com/problems/valid-anagram/solution/you-xiao-de-zi-mu-yi-wei-ci-by-leetcode-solution/) |        |
-|                                                              |                                                              |                                                              |        |
-|                                                              |                                                              |                                                              |        |
+| 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :------------------------------------------------------ |
+| [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/) | 2020年10月30日                                               | 写了个快排？                                                 |                                                         |
+| [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [2020年12月5日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B242%5D%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%202%20sort.java) | [转化为`char[]`，调用`Arrays`的方法`sort`和`equals`](https://leetcode-cn.com/problems/valid-anagram/solution/you-xiao-de-zi-mu-yi-wei-ci-by-leetcode-solution/) |                                                         |
+| [350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [2020年12月6日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B350%5D%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86%20II%201%20HashMap.java) | [哈希表](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/solution/liang-ge-shu-zu-de-jiao-ji-ii-by-leetcode-solution/) |                                                         |
+|                                                              | [2020年12月6日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B350%5D%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86%20II%202%20sort.java) | [排序 + 双指针](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/solution/liang-ge-shu-zu-de-jiao-ji-ii-by-leetcode-solution/) | `Arrays.copyOfRange(int [] original, int from, int to)` |
+| [922. 按奇偶排序数组 II](https://leetcode-cn.com/problems/sort-array-by-parity-ii/) | [2020年12月6日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B922%5D%E6%8C%89%E5%A5%87%E5%81%B6%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%20II.java) | [方法3：原地交换](https://leetcode-cn.com/problems/sort-array-by-parity-ii/solution/922san-chong-po-shi-wu-hua-de-fang-fa-ren-ni-xuan-/) |                                                         |
+|                                                              |                                                              |                                                              |                                                         |
 
 
 
