@@ -127,7 +127,26 @@
 | [1046. 最后一块石头的重量](https://leetcode-cn.com/problems/last-stone-weight/) | [2020年12月3日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B1046%5D%E6%9C%80%E5%90%8E%E4%B8%80%E5%9D%97%E7%9F%B3%E5%A4%B4%E7%9A%84%E9%87%8D%E9%87%8F.java) | 大根堆                                                       |                                                              |
 |                                                              |                                                              |                                                              |                                                              |
 
- 
+**大根堆**
+
+法 1：重写比较器
+
+```java
+Queue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return 0;
+            }
+        });
+```
+
+法 2：
+
+```java
+Queue<Integer> pq = new PriorityQueue<>((v1, v2) -> v2 - v1);
+```
+
+
 
 ### 1.5 排序
 
@@ -146,6 +165,12 @@
 | [1370. 上升下降字符串](https://leetcode-cn.com/problems/increasing-decreasing-string/) | [2020年12月10日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B1370%5D%E4%B8%8A%E5%8D%87%E4%B8%8B%E9%99%8D%E5%AD%97%E7%AC%A6%E4%B8%B2.java) | ① Count the frequency of each character.                     | 可以不转化`char[] charArray = s.toCharArray();` 直接遍历`s`。但转化为数组速度似乎更快 |
 |                                                              | [桶排序](https://leetcode-cn.com/problems/increasing-decreasing-string/solution/javadai-ma-2msji-bai-liao-100de-yong-hu-by-sdwwld/) | ② Loop over all character from 'a' to 'z' and append the character if it exists and decrease frequency by 1. Do the same from 'z' to 'a'. | 强制转型：`stringBuilder.append((char) ('a' + i));`          |
 |                                                              |                                                              | ③ Keep repeating until the frequency of all characters is zero. | 循环的终止条件：`int size = s.length();` 然后判断新的字符串的长度是否已经达到`size` |
+| [1403. 非递增顺序的最小子序列](https://leetcode-cn.com/problems/minimum-subsequence-in-non-increasing-order/) | [2020年12月11日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B1403%5D%E9%9D%9E%E9%80%92%E5%A2%9E%E9%A1%BA%E5%BA%8F%E7%9A%84%E6%9C%80%E5%B0%8F%E5%AD%90%E5%BA%8F%E5%88%97.java) | 直接排序                                                     | [JAVA使用Arrays.sort()升序和降序](https://www.cnblogs.com/wangkongming/p/13061577.html) |
+|                                                              |                                                              |                                                              | `int[]` 无法强制转型为 `Integer[]`                           |
+| [1491. 去掉最低工资和最高工资后的工资平均值](https://leetcode-cn.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) | [2020年12月11日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B1491%5D%E5%8E%BB%E6%8E%89%E6%9C%80%E4%BD%8E%E5%B7%A5%E8%B5%84%E5%92%8C%E6%9C%80%E9%AB%98%E5%B7%A5%E8%B5%84%E5%90%8E%E7%9A%84%E5%B7%A5%E8%B5%84%E5%B9%B3%E5%9D%87%E5%80%BC%20me.java) | 直接排序                                                     |                                                              |
+| [1502. 判断能否形成等差数列](https://leetcode-cn.com/problems/can-make-arithmetic-progression-from-sequence/) | [2020年12月11日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B1502%5D%E5%88%A4%E6%96%AD%E8%83%BD%E5%90%A6%E5%BD%A2%E6%88%90%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97.java) | 直接排序                                                     |                                                              |
+| [1528. 重新排列字符串](https://leetcode-cn.com/problems/shuffle-string/) | [2020年12月11日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B1528%5D%E9%87%8D%E6%96%B0%E6%8E%92%E5%88%97%E5%AD%97%E7%AC%A6%E4%B8%B2.java) | 不用排序                                                     | `return new String(chars); // chars是char[]`   参考[Java中char和String的转换](https://blog.csdn.net/Yaokai_AssultMaster/article/details/52082763) |
+| [1636. 按照频率将数组升序排序](https://leetcode-cn.com/problems/sort-array-by-increasing-frequency/) | [2020年12月11日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B1636%5D%E6%8C%89%E7%85%A7%E9%A2%91%E7%8E%87%E5%B0%86%E6%95%B0%E7%BB%84%E5%8D%87%E5%BA%8F%E6%8E%92%E5%BA%8F.java) | [高位存频率，低位存数值](https://leetcode-cn.com/problems/sort-array-by-increasing-frequency/solution/shuang-bai-java-by-remy-4/) |                                                              |
 |                                                              |                                                              |                                                              |                                                              |
 
 
