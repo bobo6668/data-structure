@@ -10,9 +10,13 @@
 * 按 tag 分类刷
 * 定期复习，重做之前刷过的题
 
+> [动画图解 - LeetCodeAnimation](https://github.com/MisterBooo/LeetCodeAnimation)
+
+* 可以看一看
 
 
-## 1. 按 tag 分类刷
+
+## 1. 数据结构
 
 ### 1.1 栈
 
@@ -148,7 +152,29 @@ Queue<Integer> pq = new PriorityQueue<>((v1, v2) -> v2 - v1);
 
 
 
-### 1.5 排序
+### 1.5 集合
+
+| 题目                                                         | 时间+代码                                                    | 思路          | 知识点 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- | :----- |
+| [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [2020年12月5日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B349%5D%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.java) | 两个`HashSet` |        |
+|                                                              |                                                              |               |        |
+
+
+
+## 2. 算法
+
+### 2.1 贪心算法
+
+| 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----- |
+| [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B122%5D%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%20II%20me.java) | 自己按照推理写出来的。其实本质上是贪心算法，只是没有找到规律。 |        |
+|                                                              | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B122%5D%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%20II%20better.java) | [这道题 「贪心」 的地方在于，对于 「今天的股价 - 昨天的股价」，得到的结果有 3 种可能：① 正数，② 00，③负数。贪心算法的决策是： **只加正数**](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/) |        |
+| [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/) | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B455%5D%E5%88%86%E5%8F%91%E9%A5%BC%E5%B9%B2.java) | 设计好贪心的策略即可                                         |        |
+|                                                              |                                                              |                                                              |        |
+
+
+
+### 2.1 排序
 
 | 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------------------- |
@@ -176,18 +202,10 @@ Queue<Integer> pq = new PriorityQueue<>((v1, v2) -> v2 - v1);
 
 
 
-### 1.6 查找
+### 2.2 查找
 
 | 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----- |
 | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [2020年12月5日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B242%5D%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%201%20hash.java) | [哈希映射](https://leetcode-cn.com/problems/valid-anagram/solution/hua-jie-suan-fa-242-you-xiao-de-zi-mu-yi-wei-ci-by/) |        |
 |                                                              |                                                              |                                                              |        |
 
-
-
-### 1.7 集合
-
-| 题目                                                         | 时间+代码                                                    | 思路          | 知识点 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- | :----- |
-| [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [2020年12月5日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B349%5D%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.java) | 两个`HashSet` |        |
-|                                                              |                                                              |               |        |
