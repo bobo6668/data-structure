@@ -165,16 +165,17 @@ Queue<Integer> pq = new PriorityQueue<>((v1, v2) -> v2 - v1);
 
 ### 2.1 贪心算法
 
-| 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----- |
-| [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B122%5D%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%20II%20me.java) | 自己按照推理写出来的。其实本质上是贪心算法，只是没有找到规律。 |        |
-|                                                              | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B122%5D%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%20II%20better.java) | [这道题 「贪心」 的地方在于，对于 「今天的股价 - 昨天的股价」，得到的结果有 3 种可能：① 正数，② 00，③负数。贪心算法的决策是： **只加正数**](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/) |        |
-| [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/) | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B455%5D%E5%88%86%E5%8F%91%E9%A5%BC%E5%B9%B2.java) | 设计好贪心的策略即可                                         |        |
-|                                                              |                                                              |                                                              |        |
+| 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点                                           |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------- |
+| [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B122%5D%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%20II%20me.java) | 自己按照推理写出来的。其实本质上是贪心算法，只是没有找到规律。 |                                                  |
+|                                                              | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B122%5D%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%20II%20better.java) | [这道题 「贪心」 的地方在于，对于 「今天的股价 - 昨天的股价」，得到的结果有 3 种可能：① 正数，② 00，③负数。贪心算法的决策是： **只加正数**](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/) |                                                  |
+| [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/) | [2020年12月14日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B455%5D%E5%88%86%E5%8F%91%E9%A5%BC%E5%B9%B2.java) | 设计好贪心的策略即可                                         |                                                  |
+| [392. 判断子序列](https://leetcode-cn.com/problems/is-subsequence/) | [2020年12月17日](https://github.com/bobo6668/data-structure/blob/master/leetcode/%5B392%5D%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97.java) | 双指针                                                       | `// 特殊情况提前处理；// 避免一直查询字符串长度` |
+|                                                              |                                                              |                                                              |                                                  |
 
 
 
-### 2.1 排序
+### 2.2 排序
 
 | 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------------------- |
@@ -202,7 +203,7 @@ Queue<Integer> pq = new PriorityQueue<>((v1, v2) -> v2 - v1);
 
 
 
-### 2.2 查找
+### 2.3 查找
 
 | 题目                                                         | 时间+代码                                                    | 思路                                                         | 知识点 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | :----- |
