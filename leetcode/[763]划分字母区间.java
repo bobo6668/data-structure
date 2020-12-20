@@ -38,7 +38,7 @@ class Solution {
             res.add(length);
             return res;
         }
-        // 先遍历一遍S，记录每个数字最后一次出现的位置
+        // 先遍历一遍S，记录每个字母最后一次出现的位置
         int[] pos = new int[26];
         for (int i = 0; i < length; i++) {
             pos[S.charAt(i) - 'a'] = i;
@@ -46,8 +46,8 @@ class Solution {
         // 再遍历一遍S，通过end和currentCharEnd判断是否为符合要求的子串，若是则计算子串长度并记录
         int start = 0, end = 0; // 用以记录当前子串的起点、终点
         for (int i = 0; i < length; i++) {
-            // 每次遇到一个新的字符，查询该字符最后出现的位置，与end比较大小，取max更新end
-            // 这样可以保证end为目前所遇到的所有字符最后出现的位置里最靠后的一个位置
+            // 每次遇到一个新的字母，查询该字母最后出现的位置，与end比较大小，取max更新end
+            // 这样可以保证end为目前所遇到的所有字母最后出现的位置里最靠后的一个位置
             end = Math.max(pos[S.charAt(i) - 'a'], end);
             // 若当前位置就是end了，说明可以断开了，找到了一个符合要求的子串，记录
             if (i == end) {
