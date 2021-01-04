@@ -32,17 +32,7 @@ class Solution {
         while (start <= end) {
             mid = (start + end) / 2;
             if (nums[mid] == target) return true;
-            if (nums[mid] == nums[start]) {
-                // 处理特殊情况：判断不了哪边为升序部分
-                // [0 1 0 0 0]
-                start = start + 1;
-            }
-            else if (nums[mid] == nums[end]) {
-                // 处理特殊情况：判断不了哪边为升序部分
-                // [1 0 0 0]
-                end = end - 1;
-            }
-            else if (nums[mid] < nums[end]) {
+            if (nums[mid] < nums[end]) {
                 // 右边是升序的
                 if (target > nums[mid] && target <= nums[end]) {
                     start = mid + 1;
@@ -59,6 +49,16 @@ class Solution {
                 else {
                     start = mid + 1;
                 }
+            }
+            else if (nums[mid] == nums[start]) {
+                // 处理特殊情况：判断不了哪边为升序部分
+                // [0 1 0 0 0]
+                start = start + 1;
+            }
+            else if (nums[mid] == nums[end]) {
+                // 处理特殊情况：判断不了哪边为升序部分
+                // [1 0 0 0]
+                end = end - 1;
             }
         }
         return false;
