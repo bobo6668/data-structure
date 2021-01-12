@@ -15,24 +15,24 @@ public class QuickSort {
     }
 
     public void sort(int[] nums, int left, int right) {
-        if (left < right) { //¡¾¡Ì¡¿
+        if (left < right) { //ã€âˆšã€‘
             int mid = partition(nums, left, right);
             sort(nums, left, mid - 1);
             sort(nums, mid + 1, right);
         }
     }
     private int partition(int[] nums, int left, int right) {
-        int value = nums[left]; //¡¾¡Ì¡¿
-        int i = left, j = right; //¡¾¡Ì¡¿
-        while (i < j) { //¡¾¡Ì¡¿
-            while (nums[j] >= value && j > i) j--; //¡¾¡Ì¡¿
+        int value = nums[left]; //ã€âˆšã€‘
+        int i = left, j = right; //ã€âˆšã€‘
+        while (i < j) { //ã€âˆšã€‘
+            while (nums[j] >= value && j > i) j--; //ã€âˆšã€‘
             while (nums[i] <= value && i < j) i++;
             if (i < j) swap(nums, i, j);
         }
-        swap(nums, left, i); //¡¾¡Ì¡¿
+        swap(nums, left, i); //ã€âˆšã€‘
         return i;
     }
-    private void swap(int[] arr, int i, int j) { //¡¾¡Ì¡¿
+    private void swap(int[] arr, int i, int j) { //ã€âˆšã€‘
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
